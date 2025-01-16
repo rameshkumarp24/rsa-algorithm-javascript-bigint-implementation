@@ -27,13 +27,13 @@ The RSA algorithm is a widely used asymmetric cryptographic technique based on t
 
 ### 2. Calculate `n` and `φ(n)`
    - \( n = p \times q \)
-   - \( \phi(n) = (p - 1) \times (q - 1) \)
+   - \( φ(n) = (p - 1) \times (q - 1) \)
 
 ### 3. Choose Public Key Exponent (e)
-   - Choose \( e \) such that \( 1 < e < \phi(n) \) and \( \text{gcd}(e, \phi(n)) = 1 \).
+   - Choose \( e \) such that \( 1 < e < φ(n) \) and gcd(e, φ(n)) = 1.
 
 ### 4. Calculate Private Key (d)
-   - \( d \) is the modular multiplicative inverse of \( e \) modulo \( \phi(n) \).
+   - \( d \) is the modular multiplicative inverse of \( e \) modulo \( φ(n) \).
 
 ### 5. Encrypt and Decrypt Messages
    - **Encryption**: \( c = m^e \mod n \)
@@ -82,7 +82,7 @@ function generateKeys(bits = 1024) {
 
   let e = bigInt(65537); // Commonly used prime
   if (phi.gcd(e).notEquals(1)) {
-    throw new Error("e and \u03d5(n) are not coprime");
+    throw new Error("e and φ(n) are not coprime");
   }
 
   const d = e.modInv(phi);
