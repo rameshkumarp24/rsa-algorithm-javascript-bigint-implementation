@@ -23,7 +23,7 @@ function generateKeys(bits = 1024) {
 
   // Step 3: Choose e (public key exponent)
   let e = bigInt(65537); // Commonly used prime
-  if (phi.gcd(e).notEquals(1)) {
+  if (bigInt.gcd(phi, e).notEquals(1))  {
     throw new Error("e and φ(n) are not coprime");
   }
 
