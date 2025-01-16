@@ -26,8 +26,8 @@ The RSA algorithm is a widely used asymmetric cryptographic technique based on t
    - Generate two large prime numbers, `p` and `q`.
 
 ### 2. Calculate `n` and `φ(n)`
-   - \( n = p \times q \)
-   - \( φ(n) = (p - 1) \times (q - 1) \)
+   - \( n = p × q \)
+   - \( φ(n) = (p - 1) × (q - 1) \)
 
 ### 3. Choose Public Key Exponent (e)
    - Choose \( e \) such that \( 1 < e < φ(n) \) and gcd(e, φ(n)) = 1.
