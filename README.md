@@ -36,8 +36,8 @@ The RSA algorithm is a widely used asymmetric cryptographic technique based on t
    - \( d \) is the modular multiplicative inverse of \( e \) modulo \( φ(n) \).
 
 ### 5. Encrypt and Decrypt Messages
-   - **Encryption**: \( c = m^e \mod n \)
-   - **Decryption**: \( m = c^d \mod n \)
+   - **Encryption**: \( c = m^e % n \)
+   - **Decryption**: \( m = c^d % n \)
 
 ---
 
