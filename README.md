@@ -143,7 +143,7 @@ console.log("Decrypted:", decryptedMessage.toString());
 
 2. Navigate to the project directory:
    ```bash
-   cd rsa-implementation
+   cd rsa-algorithm-javascript-bigint-implementation
    ```
 
 3. Install dependencies:
